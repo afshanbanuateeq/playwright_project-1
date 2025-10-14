@@ -1,10 +1,10 @@
 import { Page, expect } from '@playwright/test';
 
 export class LoginPage {
-  readonly page: Page;
-  readonly usernameInput;
-  readonly passwordInput;
-  readonly loginButton;
+   page: Page;
+   usernameInput;
+   passwordInput;
+   loginButton;
 
   constructor(page: Page) {
     this.page = page;
