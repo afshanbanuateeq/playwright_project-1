@@ -1,0 +1,211 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Afshan\\Desktop\\playwright_project\\playwright.config.js",
+    "rootDir": "C:/Users/Afshan/Desktop/playwright_project/test",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Afshan/Desktop/playwright_project/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Desktop Chromium",
+        "name": "Desktop Chromium",
+        "testDir": "C:/Users/Afshan/Desktop/playwright_project/test",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "para.spec.js",
+      "file": "para.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ParaBank login and request loan",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Desktop Chromium",
+              "projectName": "Desktop Chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 716,
+                  "error": {
+                    "message": "TypeError: loginPage.loginToParaBank is not a function",
+                    "stack": "TypeError: loginPage.loginToParaBank is not a function\n    at C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js:25:13",
+                    "location": {
+                      "file": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js",
+                      "column": 13,
+                      "line": 25
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mParaBankLogin\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m   loginPage\u001b[33m.\u001b[39mloginToParaBank(\u001b[32m\"banu123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"test123\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// await page.getByRole('link', { name: 'Request Loan' }).click();\u001b[39m\n \u001b[90m 27 |\u001b[39m   \u001b[90m// await page.locator('#amount').fill('20000000000000000');\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[90m// await page.locator('#downPayment').fill('120000000');\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js",
+                        "column": 13,
+                        "line": 25
+                      },
+                      "message": "TypeError: loginPage.loginToParaBank is not a function\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mParaBankLogin\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m   loginPage\u001b[33m.\u001b[39mloginToParaBank(\u001b[32m\"banu123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"test123\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// await page.getByRole('link', { name: 'Request Loan' }).click();\u001b[39m\n \u001b[90m 27 |\u001b[39m   \u001b[90m// await page.locator('#amount').fill('20000000000000000');\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[90m// await page.locator('#downPayment').fill('120000000');\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js:25:13\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-17T13:17:12.694Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test-results\\para-ParaBank-login-and-request-loan-Desktop-Chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test-results\\para-ParaBank-login-and-request-loan-Desktop-Chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test-results\\para-ParaBank-login-and-request-loan-Desktop-Chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js",
+                    "column": 13,
+                    "line": 25
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 686,
+                  "error": {
+                    "message": "TypeError: loginPage.loginToParaBank is not a function",
+                    "stack": "TypeError: loginPage.loginToParaBank is not a function\n    at C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js:25:13",
+                    "location": {
+                      "file": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js",
+                      "column": 13,
+                      "line": 25
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mParaBankLogin\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m   loginPage\u001b[33m.\u001b[39mloginToParaBank(\u001b[32m\"banu123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"test123\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// await page.getByRole('link', { name: 'Request Loan' }).click();\u001b[39m\n \u001b[90m 27 |\u001b[39m   \u001b[90m// await page.locator('#amount').fill('20000000000000000');\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[90m// await page.locator('#downPayment').fill('120000000');\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js",
+                        "column": 13,
+                        "line": 25
+                      },
+                      "message": "TypeError: loginPage.loginToParaBank is not a function\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mParaBankLogin\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m   loginPage\u001b[33m.\u001b[39mloginToParaBank(\u001b[32m\"banu123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"test123\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// await page.getByRole('link', { name: 'Request Loan' }).click();\u001b[39m\n \u001b[90m 27 |\u001b[39m   \u001b[90m// await page.locator('#amount').fill('20000000000000000');\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[90m// await page.locator('#downPayment').fill('120000000');\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js:25:13\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-09-17T13:17:14.654Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test-results\\para-ParaBank-login-and-request-loan-Desktop-Chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test-results\\para-ParaBank-login-and-request-loan-Desktop-Chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test-results\\para-ParaBank-login-and-request-loan-Desktop-Chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Afshan\\Desktop\\playwright_project\\test\\para.spec.js",
+                    "column": 13,
+                    "line": 25
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d2bcba7f5da2ebdf06a6-dc495c1304d85f57198c",
+          "file": "para.spec.js",
+          "line": 18,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-17T13:17:12.076Z",
+    "duration": 3815.5980000000004,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

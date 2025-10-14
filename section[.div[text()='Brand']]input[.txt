@@ -1,0 +1,2 @@
+//section[.//div[text()='Brand']]//input[@type='checkbox']
+//div[text()='Brand']/ancestor::section//input[@type='checkbox']
