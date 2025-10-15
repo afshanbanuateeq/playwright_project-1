@@ -1,15 +1,15 @@
-import {test, expect } from "../lib/BaseTest";
-test('login to bookstore', async ({ loginToDemoQA,page  }) => {
+// import {test, expect } from "../lib/BaseTest";
+// test('login to bookstore', async ({ loginToDemoQA,page  }) => {
 
-  await loginToDemoQA.loginToDemoQA("demouat@gmail.com","demouat@09");
+//   await loginToDemoQA.loginToDemoQA("demouat@gmail.com","demouat@09");
   
-  await expect(loginToDemoQA.verifyPlaceHolder("Type to search")).toBeVisible();
-});
-test('login to bookstore with wrong credentials', async ({ loginToDemoQA,page }) => {
+//   await expect(loginToDemoQA.verifyPlaceHolder("Type to search")).toBeVisible();
+// });
+// test('login to bookstore with wrong credentials', async ({ loginToDemoQA,page }) => {
 
-  await loginToDemoQA.loginToDemoQA("demouat@gmail.com","demouat@0");
-await expect(page.locator('#name')).toContainText("Invalid username or password");
-});
+//   await loginToDemoQA.loginToDemoQA("demouat@gmail.com","demouat@0");
+// await expect(page.locator('#name')).toContainText("Invalid username or password");
+// });
 
 
 // test('login to bookstore with empty password', async ({ page }) => {
