@@ -12,3 +12,6 @@ test('Login to QA Demo Book Store', async ({ page }) => {
   // await page.getByRole('textbox', { name: 'UserName' }).fill('demouat@gmail.com');
   // await page.getByRole('textbox', { name: 'Password' }).fill('Demouat@09');
   // await page.getByRole('button', { name: 'Login' }).click();
+
+  await page.getByRole('heading', { name: 'Elements' }).click()
+  await page.locator('div').filter({ hasText: /^Elements$/ }).first().click();
