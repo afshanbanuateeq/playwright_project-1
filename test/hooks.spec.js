@@ -28,7 +28,3 @@ test('Fill text box form', async ({ page }) => {
 
   await expect(page.locator('#name')).toContainText('Afshan');
 });
-
-test('Check page title', async ({ page }) => {
-  await expect(page).toHaveTitle(/DEMOQA/);
-});

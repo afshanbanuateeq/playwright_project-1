@@ -1,4 +1,4 @@
-// import {test, expect } from "../lib/BaseTest";
+import{test,expect} from  '@playwright/test';
 // test('login to bookstore', async ({ loginToDemoQA,page  }) => {
 
 //   await loginToDemoQA.loginToDemoQA("demouat@gmail.com","demouat@09");
@@ -12,17 +12,17 @@
 // });
 
 
-// test('login to bookstore with empty password', async ({ page }) => {
-//   await page.goto("https://demoqa.com");
-//   await page.getByText("Book Store Application", { exact: true }).click();
-//   await page.locator("#login").click();
-//   await page.locator('#userName').waitFor({ state: 'visible' });
-//   await page.locator('#userName').fill("demouat@gmail.com");
-//   await page.locator("#login").waitFor({ state: 'visible' });
-//   await page.locator("#login").click();
-//   await page.locator('#password').waitFor({ state: 'visible' });
-//   await expect(page.locator('#password')).toHaveClass(/is-invalid/);
-// });
+test('login to bookstore with empty password', async ({ page }) => {
+  await page.goto("https://demoqa.com");
+  await page.getByText("Book Store Application", { exact: true }).click();
+  await page.locator("#login").click();
+  await page.locator('#userName').waitFor({ state: 'visible' });
+  await page.locator('#userName').fill("demouat@gmail.com");
+  await page.locator("#login").waitFor({ state: 'visible' });
+  await page.locator("#login").click();
+  await page.locator('#password').waitFor({ state: 'visible' });
+  await expect(page.locator('#password')).toHaveClass(/is-invalid/);
+});
 // test('login to bookstore with empty username', async ({ page }) => {
 //   await page.goto("https://demoqa.com");
 //   await page.getByText("Book Store Application", { exact: true }).click();
